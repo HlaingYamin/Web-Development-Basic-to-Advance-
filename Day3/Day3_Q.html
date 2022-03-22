@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 Homework</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><b>Request Form</b></legend>
+            <img src="tokyo.jpg" alt="Tokyo City"width="100" height="100"> 
+            <p></p>
+
+            <h1><i><b>User Information</b></i></h1>
+            <p></p>
+
+            <label for="regDate">Register Date Time</label>&nbsp;
+            <input type="button" id="regDate" value="2021/06/04 12:00AM" disabled>
+            <p></p>
+
+            <label for="name">UserName:</label>&nbsp;
+            <input type="text" id="name" placeholder="john1234" required>
+            <p></p>
+
+            <label for="pass">Password:</label>&nbsp;
+            <input type="text" id="pass" required>
+            <p></p>
+
+            <label for="age">Age:</label>&nbsp;
+            <input type="number" id="age">
+            <p></p>
+
+            <label for="gender">Gender:</label>&nbsp;
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><p></p>
+            
+
+            <label for="edu">Education:</label>&nbsp;
+            <input type="radio" name="education">Under Graduated
+            <input type="radio" name="education">Bachelor
+            <input type="radio" name="education">Master
+            <p></p>
+
+            <label for="card">Card:</label>&nbsp;
+            <input type="checkbox" name="card">Car License
+            <input type="checkbox" name="card">Passport
+            <input type="checkbox" name="card" checked>NRC
+            <p></p>
+
+            <!--Similar with combobox-->
+            <label for="hobby">Hobby:</label>&nbsp;
+            <input list="hobbies" name="hobby" id="hobby">
+            <datalist id="hobbies">
+                <option value="Football">
+                <option value="Programmer">
+                <option value="Reading">
+                <option value="Developer">
+            </datalist>
+            <p></p>
+
+            <label for="upload">Upload Your Profile:</label>&nbsp;
+            <input type="file">
+            <p></p>
+
+            <label for="address">Address:</label>&nbsp;
+            <textarea></textarea>
+            <p></p>
+
+            <input type="reset" value="Default">
+            <input type="submit" value="Send">
+
+            <button onclick="alert('Go Github')">
+                <a href=https://github.com/HlaingYamin>Go Github</a>
+            </button><p></p>
+        </fieldset>
+    </form>
+</body>
+</html>
