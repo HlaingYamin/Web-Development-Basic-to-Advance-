@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Brain Homework</title>
+    <link rel="stylesheet" href="computer_brain.css">
+    <script type="text/javascript" src="computer_brain.js"></script>
+</head>
+<body>
+    
+        <div class="header">
+                <div class="start">
+                    <div>Calculator Brain</div>
+                    <button id="btnstart" class="btnstart activestart"  
+                    onclick="start()">Start</button>
+    
+                </div>
+                <div class="stop">
+                    <button id="btnstop" class="btnstop inactivestop"  
+                    onclick="stop()" disabled>Stop</button>
+                </div>
+        </div>  <p></p> 
+        <div class="body">
+            <fieldset class="question">
+                <legend>Question</legend>
+                <span id="ques" class="ques"></span>
+                <span class="arrow">=></span>
+            </fieldset>
+            <fieldset class="question">
+                <legend>Answer</legend>
+                <input type="number" id="ans" autocomplete="off" disabled>
+            </fieldset><p></p>
+            <button id="user_ans" type="button" class="check" onclick="check_ans()" disabled><b>Check</b></button>
+        </div> 
+        <h3 class="history">History</h3>
+        <ol id="history"></ol>
+</body>
+</html>

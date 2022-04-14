@@ -1,0 +1,53 @@
+body{
+    background-color:antiquewhite;
+}
+
+.header{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(231, 137, 21);
+}
+
+.btnstart{
+    float: left;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    font-size: medium;
+}
+
+.btnstop{
+    float: right;
+    width: 20%;
+    height: 50px;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    font-size: medium;
+}
+.activestop{
+    background-color: red;
+}
+.inactivestop{
+    background-color: gray;
+}
+.activestart{
+    background-color: green;
+}
+.inactivestart{
+    background-color: gray;
+}
+
+.body{
+    clear: both;
+    margin: 50px;
+}
+.check{
+    background-color: blue;
+    width: 100px;
+    color:white;
+    font-size: medium;
+    
+}
