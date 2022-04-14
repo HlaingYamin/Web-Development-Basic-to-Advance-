@@ -1,0 +1,88 @@
+
+.table{
+    align-items: center;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+}
+
+.lbl1{
+    font-size: medium;
+    width: 100px;
+}
+.lbl2{
+    font-size: medium;
+    width: 100px;
+}
+
+.btnstart{
+    
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    font-size: medium;
+    background-color: green;
+}
+
+.ques{
+    border-style:groove;
+    border-color: green;
+    font-size:30px;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.btnrandom{
+    float: left;
+    background-color: blue;
+    color: white;
+    border-style:groove;
+    border-color: blue;
+    border-radius: 50px;
+    font-size:70px;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 250px;
+}
+
+.btnstop{
+    clear: both;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    font-size: medium;
+    background-color: gray;
+    align-items: center;
+    text-align: center;
+}
+.history{
+    margin: 30px;
+}
+
+.activestop{
+    background-color: red;
+}
+.inactivestop{
+    background-color: gray;
+}
+.activestart{
+    background-color: green;
+}
+.inactivestart{
+    background-color: gray;
+}
+
