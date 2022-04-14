@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day9 Homework</title>
+    <link rel="stylesheet" href="day9.css" >
+</head>
+<body>
+    <!--First Part-->
+    <label >First Number</label>
+    <input type="number" id="first_num">
+    <label for="operator">Operatior:</label>&nbsp;
+    <select id="operator">
+        <option value="add">+</option>
+        <option value="sub">-</option>
+        <option value="multi">*</option>
+        <option value="divided">/</option>
+    </select>
+    <label >Second Number</label>
+    <input type="number" id="sec_num"><p></p>
+
+    <button onclick="calculate_fun()"> Calculate</button><p></p>
+    <p id="cal_result"></p>
+
+    <!--Second Part-->
+    <label >Multiply First Number</label>
+    <input type="number" id="number">
+    <label >Times</label>
+    <input type="number" id="times">
+    <button onclick="show_fun()"> Show</button><p></p>
+    Result:<p></p>
+    <p id="show_result"></p>
+    
+    <script type="text/javascript" src="day9.js"></script>
+</body>
+</html>
