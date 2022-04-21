@@ -1,0 +1,638 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/*For Background Image */
+.bgImg{
+    background-image: url('underwater.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+/*For Logo Image */
+.imgLogo{
+   width: 100px;
+   height: 100px;
+   border-radius: 50px;
+   margin-left: 10px;
+   float: left;
+}
+/*For Sign In Button */
+.signin{
+    color:white;
+    text-align: center;
+    font-size: 15px;
+    width: 100px;
+    height: 20px;
+    padding-top: 5px;
+    border:1px solid white;
+    border-radius: 30px; 
+    margin: auto;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.signin:hover{
+    background-color: #6dA1A1;
+}
+/*For Underwater Word */
+.underwater{
+    clear: both;
+    font-size: 100px;
+    color: white;
+    margin-left: 200px;
+    margin-top: 10px;
+    width: 680px;
+    height: 100px;
+    border:1px solid none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 2px cyan;
+}
+/*For Paragraph*/
+.para{
+    color: white;
+    text-align: justify;
+    margin-left: 230px ;
+    width: 600px;
+    height: 80px;
+    text-shadow: 1px 1px 2px cyan;
+}
+/*For Let's Play Button */
+.play{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    width: 350px;
+    height: 30px;
+    padding-top: 10px;
+    border:2px solid white;
+    border-radius: 30px; 
+    margin: auto;
+    margin-top: 20px;
+}
+.play:hover{
+    background-color: #6dA1A1;
+}
+
+/*Start Eight Big Bubbles*/
+.bl1{
+    width: 50px;
+    height: 50px;
+    transform: translateX(100px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-name: popup;
+    animation-direction: normal;
+    position: absolute;
+}
+
+.bl2{
+    width: 50px;
+    height: 50px;
+    transform: translateX(300px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-name: popup;
+    animation-direction: normal;
+    position: absolute;
+
+}
+.bl3{
+    width: 50px;
+    height: 50px;
+    transform: translateX(400px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-name: popup;
+    animation-direction: normal;
+    position: absolute;
+}
+.bl4{
+    width: 50px;
+    height: 50px;
+    transform: translateX(600px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-name: popup;
+    animation-direction: normal;
+    position: absolute;
+}
+.bl5{
+    width: 50px;
+    height: 50px;
+    transform: translateX(800px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-name: popup;
+    animation-direction: normal;
+    position: absolute;
+}
+.bl6{
+    width: 50px;
+    height: 50px;
+    transform: translateX(900px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-name: popup;
+    animation-direction: normal;
+    position: absolute;
+}
+.bl7{
+    width: 50px;
+    height: 50px;
+    transform: translateX(1000px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-name: popup;
+    animation-direction: normal;
+    position: absolute;
+}
+.bl8{
+    width: 50px;
+    height: 50px;
+    transform: translateX(1200px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-name: popup;
+    animation-direction: normal;
+    position: absolute;
+}
+/*End Eight Big Bubbles*/
+/*Start Animation of Eight Big Bubbles*/
+@keyframes popup {
+    0%{
+        bottom: 0px;
+    }
+    
+    100%{
+        bottom: 300px;
+        opacity: 0.5;
+    }
+  }
+/*End Animation of Eight Big Bubbles*/
+/*Start Animation of Five Small Bubbles*/
+  @keyframes gold_popup {
+    0%{
+        bottom: 100px;
+    }
+    
+    100%{
+        bottom: 400px;
+        opacity: 0.5;
+    }
+  }
+/*End Animation of Five Big Bubbles*/
+/*Start Upper Blue Fishes */
+.blockB{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    animation-timing-function: linear;
+}
+img{
+    width: 100%;
+}
+/*For upper+lower blue Fishes Animation */
+@keyframes move{
+    0%{
+        left: 0px;
+    }
+    20%{
+        transform: translateY(100px) rotate(-10deg);
+
+    }
+    40%{
+        transform: translateY(0px)
+
+    }
+    60%{
+        transform: translateY(100px) rotate(-10deg)
+
+    }
+    80%{
+        transform: translateY(0px)
+
+    }
+    100%{
+        left: 1200px;
+
+    }
+}
+/*End for Blue Fish*/
+
+/*Start For Yellow Fishes */
+.blockY{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    animation-name: move1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction:normal;
+    padding-top: 20px;
+}
+img{
+    width: 100%;
+}
+/*For Upper+lower Yellow Fishes Animation */
+@keyframes move1{
+    0%{
+        right: 0px;
+    }
+    20%{
+        transform: translateY(50px) ;
+
+    }
+    40%{
+        transform: translateY(0px)
+
+    }
+    60%{
+        transform: translateY(50px) 
+
+    }
+    80%{
+        transform: translateY(0px)
+
+    }
+    100%{
+        right: 1200px;
+        opacity: 1;
+
+    }
+}
+/*End for Yellow Fish*/
+/*Start For Animation Delay time for both fishes*/
+.b1{
+    animation-delay: 0s;
+}
+.b2{
+    animation-delay: 3s;
+
+}
+.b3{
+    animation-delay: 4s;
+
+}
+.b3{
+    animation-delay: 2s;
+
+}
+/*End For Animation Delay time for both fishes*/
+/*Start For Upper Nimo fishes*/
+.blockNimo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: absolute;
+    animation-name: moveNimo1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    animation-timing-function: linear;
+}
+/*Start Animation for upper Nimo Fishes*/
+@keyframes moveNimo1{
+    0%{
+        right: 0px;
+    }
+    20%{
+        transform: translateY(50px);
+
+    }
+    40%{
+        transform: translateY(0px)
+
+    }
+    60%{
+        transform: translateY(50px) 
+
+    }
+    80%{
+        transform: translateY(0px)
+
+    }
+    100%{
+        right: 1200px;
+
+    }
+}
+/*End animation for upper Nimo Fishes*/
+
+/*Start For Lower Nimo fishes*/
+.blockNimo2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    animation-name: moveNimo2;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    animation-timing-function: linear;
+}
+/*Start Animation For Lower Nimo Fishes*/
+@keyframes moveNimo2{
+    0%{
+        right: 0px;
+    }
+    60%{
+        transform: translateY(50px) 
+
+    }
+    
+    100%{
+        right: 1100px;
+
+    }
+}
+/*Start For Lower Nimo fishes*/
+.blockNimo3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    position: absolute;
+    animation-name: moveNimo3;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    animation-timing-function: linear;
+}
+/*Start Animation For Lower Nimo Fishes*/
+@keyframes moveNimo3{
+    0%{
+        right: 0px;
+        
+    }
+    20%{
+        transform: translateY(50px);
+        
+
+    }
+    40%{
+        transform: translateY(0px)
+
+    }
+    60%{
+        transform: translateY(100px) 
+
+    }
+    80%{
+        transform: translateY(0px)
+
+    }
+    100%{
+        right: 1250px;
+
+    }
+}
+
+/*End Animation for lower Nimo Fishes*/
+/*Start For Animation Delay time for Nimo fishes*/
+img{
+    width: 100%;
+}
+.nm1{
+    animation-delay: 0s;
+}
+.nm2{
+    animation-delay: 1s;
+}
+.nm3{
+    animation-delay: 2s;
+}
+.nm4{
+    animation-delay: 3s;
+}
+.nm5{
+    animation-delay: 4s;
+}
+.nm6{
+    animation-delay: 5s;
+}
+/*End For Animation Delay time for both fishes*/
+/*Start For Left Seaweed*/
+.seaweed2{
+    width:100px;
+    height: 200px;
+    margin-top: 35px;
+    transform: translateX(-200px); 
+}
+.seaweed3{
+    width:100px;
+    height: 200px;
+    margin-top: 35px;
+    transform: translateX(-250px); 
+}
+.seaweed4{
+    width:100px;
+    height: 200px;
+    margin-top: 35px;
+    transform: translateX(-500px); 
+}
+/*End For Left Seaweed*/
+/*Start For Left Gold Box*/
+.gold{
+    float: left;
+    width: 150px;
+    height: 100px;
+    margin-top: 100px; 
+
+}
+.bubble_gold1{
+    width: 10px;
+    height: 10px;
+    transform: translateX(-150px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-name: gold_popup;
+    animation-direction: normal;
+    position: absolute;
+
+}
+.bubble_gold2{
+    width: 10px;
+    height: 10px;
+    transform: translateX(-180px); 
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-name: gold_popup;
+    animation-direction: normal;
+    position: absolute;
+}
+.bubble_gold3{
+    width: 10px;
+    height: 10px;
+    transform: translateX(-200px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-name: gold_popup;
+    animation-direction: normal;
+    position: absolute;
+}
+.bubble_gold4{
+    width: 10px;
+    height: 10px;
+    transform: translateX(-250px); 
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-name: gold_popup;
+    animation-direction: normal;
+    position: absolute;
+
+}
+.bubble_gold5{
+    width: 10px;
+    height: 10px;
+    transform: translateX(-280px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-name: gold_popup;
+    animation-direction: normal;
+    position: absolute;
+}
+/*End For Left Gold Box*/
+/*Start For Right one Seaweed*/
+.seaweedRight{
+    float: right;
+    width:100px;
+    height: 200px;
+    margin-top: 35px;
+    transform: translateX(230px);  
+}
+/*End For Right one Seaweed*/
+/*Start For Right moss stone*/
+.moss{
+    float: right;
+    width: 150px;
+    height: 100px;
+    margin-top: 100px; 
+    margin-right: 40px;
+   
+}
+/*Start For Right starfish,oyster,shellfish*/
+.starfish_moss2{
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin-top: 130px; 
+    transform: translate(350px,40px);
+}
+/*End For Right starfish,oyster,shellfish*/
+/*Start For Right Three Small Bubble*/
+.bubble_goldRight1{
+    width: 10px;
+    height: 10px;
+    transform: translateX(850px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-name: gold_popup;
+    animation-direction: normal;
+    position: absolute;
+}
+.bubble_goldRight2{
+    width: 10px;
+    height: 10px;
+    transform: translateX(880px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-name: gold_popup;
+    animation-direction: normal;
+    position: absolute;
+}
+.bubble_goldRight3{
+    width: 10px;
+    height: 10px;
+    transform: translateX(900px);
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-name: gold_popup;
+    animation-direction: normal;
+    position: absolute;
+}
+/*End For Right Three Small Bubble*/
+/*Start For Right flower*/
+.flowerRight{
+    float: right;
+    width: 150px;
+    height: 150px;
+    margin-top: 80px;  
+}
+/*End For Right flower*/
+/*Start For Left flower*/
+.flowerLeft{
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-top: 80px; 
+}
+/*End For Left flower*/
+.seaweedWave{
+    width:100px;
+    height: 180px;
+    margin-top: 43px; 
+    animation: wave 7s -1s infinite ease-in-out;
+}
+@keyframes wave {
+	0% {
+		transform: rotateZ(-2deg) translateX(-300px) ;
+	}
+	25%{
+		transform: rotateZ(0deg) translateX(-300px) ;
+	}
+	50% {
+		transform: rotateZ(-2deg) translateX(-300px) ;
+	}
+	75% {
+		transform: rotateZ(0deg)  translateX(-300px) ;
+	}
+	100% {
+		transform: rotateZ(-2deg) translateX(-300px) ;
+	}
+}
+
+	
+
