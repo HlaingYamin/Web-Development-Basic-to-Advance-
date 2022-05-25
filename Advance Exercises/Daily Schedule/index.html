@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Homework</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer>
+        
+    </script>
+</head>
+<body onload="assign()">
+
+    <div class="board">
+        <table id="tabledates">
+        </table>
+    </div>
+    <div class="display">
+        <h1><span id="selectDay">-</span>&nbsp;<sub id="selectDate">(Day)</sub></h1>
+        <label for="day">Day Schedule</label>
+        <input type="text" id="dayText" name="dayText">
+        <label for="night">Night Schedule</label>
+        <input type="text" id="neightText" name="neightText">
+        <button onclick="transferText()">OK</button>
+    </div>
+</body>
+</html>
