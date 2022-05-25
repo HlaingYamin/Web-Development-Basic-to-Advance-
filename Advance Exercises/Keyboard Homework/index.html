@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Homework</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <div class="card">
+        <h3>String Method Playground</h3>
+        <div class="show">
+            <p id="show"></p>
+        </div>
+        <p class="alert">Type Number for charAt,charCodeAt,includes,indexOf,lastIndexOf,startWith,endsWith</p>
+        <input type="text"  id="userInput" class="userInput">
+        <input type="checkbox" id="caplock" class="caplock">
+        <div class="fun_btns">
+            <button onclick="charAt()">charAt()</button>
+            <button onclick="charCodeAt()">charCodeAt()</button>
+            <button onclick="toUpperCase()">toUpperCase()</button>
+            <button onclick="toLowerCase()">toLowerCase()</button>
+            <button onclick="trim()">trim()</button>
+            <button onclick="includes()">includes()</button>
+            <button onclick="indexOf()">indexOf()</button>
+            <button onclick="lastIndexOf()">lastIndexOf()</button>
+            <button onclick="startsWith()">startsWith()</button>
+            <button onclick="endsWith()">endsWith()</button>
+        </div>
+        <div class="keyboard">
+            <div class="keys num_row">
+                <button class="btn" onclick="press(this)" value="1">1</button>
+                <button class="btn" onclick="press(this)" value="2">2</button>
+                <button class="btn" onclick="press(this)" value="3">3</button>
+                <button class="btn" onclick="press(this)" value="4">4</button>
+                <button class="btn" onclick="press(this)" value="5">5</button>
+                <button class="btn" onclick="press(this)" value="6">6</button>
+                <button class="btn" onclick="press(this)" value="7">7</button>
+                <button class="btn" onclick="press(this)" value="8">8</button>
+                <button class="btn" onclick="press(this)" value="9">9</button>
+                <button class="btn" onclick="press(this)" value="0">0</button>
+                <button class="btn cap" onclick="press_backspace(this)" value="backspace">Backspace</button>
+            </div>
+            <div class="keys first_char_row">
+                <button class="btn cap" onclick="press(this)" value="q">q</button>
+                <button class="btn cap" onclick="press(this)" value="w">w</button>
+                <button class="btn cap" onclick="press(this)" value="e">e</button>
+                <button class="btn cap" onclick="press(this)" value="r">r</button>
+                <button class="btn cap" onclick="press(this)" value="t">t</button>
+                <button class="btn cap" onclick="press(this)" value="y">y</button>
+                <button class="btn cap" onclick="press(this)" value="u">u</button>
+                <button class="btn cap" onclick="press(this)" value="i">i</button>
+                <button class="btn cap" onclick="press(this)" value="o">o</button>
+                <button class="btn cap" onclick="press(this)" value="p">p</button>
+            </div>
+            <div class="keys second_char_row">
+                <button class="btn cap"><label for="caplock">Caplock</label></button>
+                <button class="btn cap" onclick="press(this)" value="a">a</button>
+                <button class="btn cap" onclick="press(this)" value="s">s</button>
+                <button class="btn cap" onclick="press(this)" value="d">d</button>
+                <button class="btn cap" onclick="press(this)" value="f">f</button>
+                <button class="btn cap" onclick="press(this)" value="g">g</button>
+                <button class="btn cap" onclick="press(this)" value="h">h</button>
+                <button class="btn cap" onclick="press(this)" value="j">j</button>
+                <button class="btn cap" onclick="press(this)" value="k">k</button>
+                <button class="btn cap" onclick="press(this)" value="l">l</button>
+
+            </div>
+            <div class="keys third_char_row">
+                
+                <button class="btn cap" onclick="press(this)" value="z">z</button>
+                <button class="btn cap" onclick="press(this)" value="x">x</button>
+                <button class="btn cap" onclick="press(this)" value="c">c</button>
+                <button class="btn cap" onclick="press(this)" value="v">v</button>
+                <button class="btn cap" onclick="press(this)" value="b">b</button>
+                <button class="btn cap" onclick="press(this)" value="n">n</button>
+                <button class="btn cap" onclick="press(this)" value="m">m</button>
+                <button class="btn cap" onclick="press(this)" value=",">,</button>
+            </div>
+            <div class="keys fourth_row">
+                <button class="btn space" onclick="press_space(this)" value="space"></button>
+                <button class="btn cap clear" onclick="press_blank(this)" value="clean">Clear</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

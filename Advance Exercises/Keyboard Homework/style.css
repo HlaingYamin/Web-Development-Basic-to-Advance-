@@ -1,0 +1,109 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: teal;
+    overflow: hidden;
+}
+.card{
+    padding:10px 0px 0px 0px;
+    border-radius: 10px;
+    background-color: pink;
+    text-align: center;
+}
+.card h3{
+    font-size: larger;
+    font-weight: bolder;
+}
+.card .show{
+    width:700px;
+    height: 50px;
+    margin: auto;
+    padding: 0 10px;
+    border-radius: 5px;
+    border:1px solid black;
+    font-size: medium;
+    background: white;
+    text-align:left;
+}
+.card .show p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color:black;
+}
+.card .userInput{
+    margin:10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.card .alert{
+    font-size: medium;
+}
+.card .caplock{
+    position:absolute;
+    top:10px;
+    right:10px;
+    opacity:0;
+}
+#caplock:checked~ .keyboard .keys .cap{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.card .fun_btns button{
+    margin:10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    background-color: #56ab91;
+    color:white;
+}
+.card .keyboard{
+    padding:5px;
+    margin-top: 10px;
+    background: #000;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+.card .keyboard .keys{
+    display: flex;
+    justify-content: space-around;
+    margin:20px 30px;
+}
+
+.card .keyboard .fourth_row .btn.space{
+    padding:10px 250px;
+}
+.card .keyboard .fourth_row .btn.clear{
+    padding:10px 250px;
+}
+.card .keyboard .keys .btn{
+    padding:10px 30px;
+}
+.card .keyboard .keys button{
+    margin:0 5px;
+    padding:5px 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 0px #000;
+    background: #56ab91;
+    color:#fff;
+    cursor: pointer;
+}
+button:active{
+    transform:scale(0.9);
+}
